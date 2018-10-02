@@ -1,0 +1,1764 @@
+@CHARSET "ISO-8859-1";
+
+/*-- stuff that applies to multiple pages at the top here--*/
+html {
+	background: url(../images/jeopardy__set.jpg) no-repeat center center
+		fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: -2;
+}
+
+#logo {
+	margin-top: 10px;
+	position: absolute;
+	margin-bottom: 75px;
+	margin-left: 100px;
+}
+/*--end of multiple page stuff ---*/
+/*-------------------------------------------------------------------------------------------------------*/
+/*-- beggining of  main menu page stuff--*/
+#labelsignin {
+	margin-top: 165px;
+	margin-bottom: 2px;
+	margin-left: 268px;
+	color: black;
+}
+
+#psw {
+	margin-top: 4px;
+	margin-left: 180px;
+	height: 25px;
+	width: 250px;
+}
+
+.warningmessage {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	color: red;
+	font-size: 14px;
+	text-align: center;
+}
+
+#username {
+	margin-top: 5px;
+	margin-left: 180px;
+	height: 25px;
+	width: 250px;
+}
+
+#menubox {
+	margin: auto;
+	margin-top: 200px;
+	background: rgba(255, 255, 255, 0.75);
+	width: 600px;
+	height: 500px;
+	font-family: Verdana, Geneva, sans-serif;
+	border: 10px solid black;
+}
+
+#buttoncontainer {
+	margin-top: 130px;
+	display: flex;
+	align-items: center;
+}
+
+#backtomain {
+	margin-top: 25px;
+	margin-left: 225px;
+}
+
+#opengame {
+	margin-left: 35px;
+	margin-right: 20px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 20px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+#opengame:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+#opengame:active {
+	position: relative;
+	top: 1px;
+}
+
+#creategame {
+	margin-left: 100px;
+	margin-right: 15px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 20px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+#creategame:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+#creategame:active {
+	position: relative;
+	top: 1px;
+}
+
+/*  buttons for login page */
+#login {
+	margin-left: 160px;
+	margin-top: 25px;
+	margin-right: 25px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 20px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+#login:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+#login:active {
+	position: relative;
+	top: 1px;
+}
+
+#createlogin {
+	margin-left: 25px;
+	margin-right: 15px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 20px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+#createlogin:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+#createlogin:active {
+	position: relative;
+	top: 1px;
+}
+
+#forgotpassword {
+	color: black;
+	margin-left: 250px;
+}
+
+#welcomemessage {
+	text-align: center;
+	margin-top: 155px;
+	font-size: 25px;
+}
+
+/*------------------end of buttons for login page_*/
+
+/* location status meu within the game setup perspective-------------------*/
+#dotarrow {
+	width: 100px;
+	height: 74px;
+	position: absolute;
+	margin-top: -20px;
+	margin-left: -45px;
+}
+#gameheader{
+	width: 500px;
+	background: rgba(255, 255, 255, 0.9);;
+	color: black;
+	margin: auto;
+	border: 2px solid black;
+	text-align: center;
+	font-size: 40px;
+	margin-top:5px;
+	border-radius: 25px;
+}
+
+#gamecreatorbar {
+	width: 500px;
+	background: rgba(255, 255, 255, 0.9);;
+	color: black;
+	margin: auto;
+	border: 2px solid black;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 110px;
+	border-radius: 25px;
+}
+
+/* for savign file bar -----------------------------------------*/
+.overlaybarshide {
+	visibility: hidden;
+}
+
+#savebarcontainer tr:nth-child(1) td:nth-child(1) {
+	color: white;
+	background: grey;
+	border: 2px solid black;
+}
+
+.overlaybarsshow {
+	background: white;
+	height: 150px;
+	width: 500px;
+	position: absolute;
+	z-index: 200;
+	bottom: 150px;
+	opacity: 0.8;
+	left: 250px;
+	text-align: center;
+}
+
+.ui-progressbar {
+	height: 7em;
+	text-align: left;
+	top: 50%;
+	overflow: hidden;
+}
+
+.ui-progressbar .ui-progressbar-value {
+	margin: -1px;
+	top: 50%;
+	height: 100%;
+}
+
+.ui-progressbar .ui-progressbar-overlay {
+	background:
+		url("data:image/gif;base64,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");
+	height: 100%;
+	filter: alpha(opacity = 25); /* support: IE8 */
+}
+
+.ui-progressbar-indeterminate .ui-progressbar-value {
+	background-image: none;
+}
+
+.ui-widget-header {
+	background: #0080c0;
+	border: 1px solid #DDDDDD;
+	color: #c0c0c0;
+	top: 50%;
+	text-align: left;
+	font-weight: bold;
+}
+
+.progress-label {
+	position: absolute;
+	text-align: center;
+	color: white;
+	top: 50%;
+	left: 50%;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #000000;
+}
+/* end of saving bar stuff ----------------------------------------------------------------*/
+.statusbarshaded {
+	color: rgba(128, 128, 128, 0.75);
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 24px;
+}
+
+.statusbarhighlighted {
+	background: url(../images/yellow.png) center center no-repeat;
+	background-size: 26px 26px;
+	color: black;
+}
+
+#statusbarcontainer {
+	width: 875px;
+	margin: auto;
+	margin-top: 10px;
+	color: white;
+	font-size: 26px;
+}
+
+#statusbarcontainerquestions {
+	margin: auto;
+	margin-top: 10px;
+	color: white;
+	font-size: 26px;
+}
+
+.filetable {
+	margin: 25px; 
+	background : rgba( 255, 255, 255, 0.9);
+	border-radius: 5px;
+	width:850px;
+	text-align: center;
+	vertical-align: center;
+	position: relative;
+	border: 2px solid black;
+}
+
+
+.filetable td {
+	margin: 10px;
+	height:50px;
+	border:1px solid #c0c0c0;
+}
+.filetable tr {
+	
+	border:5px solid #000000;
+}
+
+
+.tablerowselected{
+	background: #66b3ff;
+	opacity:0.9;
+	border:3px solid black; 
+}
+
+.tablerowselected:hover{
+	cursor:pointer;
+}
+
+.tablerowselected tr{
+	border:3px solid black; 
+}
+
+.tablerowdeselected{
+	
+}
+
+.tablerowdeselected:hover{
+  cursor:pointer;
+  background: #dfecff;
+}
+
+#gameicon {
+	height: 35px;
+}
+.progressbarmarkedbelow{
+	color:black;
+	 font-weight: bold;
+}
+.progressbarmarked{
+	 background: url(../images/yellow.png) center center no-repeat;
+	background-size: 29px 29px;
+	color:black;
+	 font-weight: bold;
+}
+
+.statusbar {
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 25px;
+	text-align: center;
+	vertical-align: center;
+	position: relative;
+	border: 2px solid black;
+	
+}
+
+.statusbar td {
+	color: rgba(128, 128, 128, 0.75);
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 24px;
+}
+
+#slidercontainer {
+	display: table;
+	background: white;
+	border-radius: 25px;
+	border: 2px solid black;
+	width: 800px;
+	margin: auto;
+	height: 75px;
+}
+
+#custom-handle {
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	border-radius: 25px;
+	top: 50%;
+	font-size: 18px;
+	margin-left: -28px;
+	margin-top: -1em;
+	text-align: center;
+	line-height: 2em;
+	background: yellow;
+	border: 2px solid black;
+	color: black;
+}
+
+#slider table {
+	position: absolute;
+	margin-top: -.35em;
+	width: 685px;
+	font-size: 12px;
+	text-align: left;
+	table-layout: fixed;
+}
+
+.ui-slider {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	width: 625px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	border: 3px inset black;
+	background: #3d94f6;
+}
+
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 100;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: 1em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+	top: 0;
+	margin-left: 1em;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 10;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 25px;
+}
+
+/*------------------end of status menu________________________________===================-----------*/
+
+/* hidden textbox for passing which button was clicked*/
+#buttonclicked {
+	display: none;
+	position: absolute;
+}
+
+/* stuff for entering questions--------------------------------*/
+#gamenamecontainer {
+	color: white;
+	margin-left: 150px;
+	margin-top: 80px;
+	position: absolute;
+	font-size: 26px;
+	font-family: Helvetica;
+}
+
+#gamename {
+	height: 25px;
+	width: 200px;
+	font-size: 26px;
+	font-family: Helvetica;
+}
+
+#filealertmessage2 {
+	position: absolute;
+	margin: auto;
+	margin-left: 45px;
+	margin-top: 53px;
+	width: 500px;
+	height: 25px;
+	border: 2px solid black;
+	background: white;
+	z-index: 50;
+}
+
+#filealertmessage {
+	position: absolute;
+	margin: auto;
+	margin-left: 80px;
+	margin-top: 25px;
+	width: 400px;
+	height: 25px;
+	border: 2px solid black;
+	background: white;
+	z-index: 50;
+}
+
+#textalertmessage {
+	position: absolute;
+	margin: auto;
+	margin-left: 255px;
+	margin-top: 195px;
+	width: 400px;
+	height: 25px;
+	border: 2px solid black;
+	background: white;
+	z-index: 50;
+}
+
+#hiddendata {
+	display: none;
+	visibility: hidden;
+	position: absolute;
+}
+.hidden{
+	visibility: hidden;
+	display: block;
+	z-index:-1
+	
+}
+
+.show{
+	visibility:visible;
+}
+
+.hiddenmessages {
+	text-align: center;
+	background: white;
+	visibility: hidden;
+}
+
+.showmessages {
+	text-align: center;
+	visibility: visible;
+	color: red;
+	background: white;
+	font-size: 22px;
+	font-family: Helvetica;
+}
+
+/*opening file page*/
+#files {
+	color: Black;
+	position: absolute;
+	font-size: 28px;
+	margin-top: 150px;
+	margin-left: 50px;
+}
+
+#filechoose {
+	margin: auto;
+	margin-left: 185px;
+	width: 150px;
+	font-size: 28px;
+	height: 50px;
+}
+
+/*-- end of opening menu stuff---*/
+/*-------------------------------------------------------------------------------------------------------*/
+
+/* The below area is for scoring menu */
+.radiobuttons {
+	position: relative;
+	padding: 25px;
+	width: 300px;
+	margin: auto;
+	font-size: 30px;
+}
+
+.radiobuttonsselected {
+	color: white;
+}
+
+.radiobuttonsdeselected {
+	color: grey;
+}
+
+.optionsselected {
+	font-size: 22px;
+	color: white;
+}
+
+.optionsdeselected {
+	font-size: 22px;
+	color: grey;
+}
+
+/*-- end of scoring menu stuff---*/
+/*-------------------------------------------------------------------------------------------------------*/
+
+/* The below area is for all the information entry pages i.e. contestant numbers, category names, questions */
+#titlebar {
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	background: white;
+	padding: 15px;
+	opacity: 0.9;
+	border: 2px solid black;
+	width: 800px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 22px;
+	border-radius: 25px;
+}
+
+#logobox {
+	margin: auto;
+	width: 600px;
+	z-index: -1;
+}
+
+#subtitle {
+	color: white;
+	margin: auto;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 30px;
+	text-shadow: 1px 1px 2px #000000, -1px -1px 2px #000000, -1px 1px 2px
+		#000000, 1px -1px 2px #000000;
+}
+
+#subsubtitle {
+	color: white;
+	margin: auto;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+/* the form that contains everything inside the transparent big box outlined in white on the screen*/
+.inputs {
+	position: relative;
+	margin: auto;
+	margin-top: 10px;
+	background: rgba(0, 0, 225, 0.5);
+	width: 900px;
+	height: 521px;
+	font-family: Verdana, Geneva, sans-serif;
+	border: 10px solid white;
+}
+
+/* for larger container for more textboxes in regular (8-10)*/
+.inputsexpand {
+	position: relative;
+	margin: auto;
+	margin-top: 10px;
+	background: rgba(0, 0, 225, 0.5);
+	width: 900px;
+	height: 655px;
+	font-family: Verdana, Geneva, sans-serif;
+	border: 10px solid white;
+}
+
+.inputsexpandmore {
+	position: relative;
+	margin: auto;
+	margin-top: 10px;
+	background: rgba(0, 0, 225, 0.5);
+	width: 900px;
+	height: 745px;
+	font-family: Verdana, Geneva, sans-serif;
+	border: 10px solid white;
+}
+
+/* for smallets of containers for question/solutions (3-5)*/
+.questionssmall {
+	position: relative;
+	margin: auto;
+	margin-top: 10px;
+	background: rgba(0, 0, 225, 0.5);
+	width: 900px;
+	height: 700px;
+	font-family: Verdana, Geneva, sans-serif;
+	border: 10px solid white;
+}
+/* for largest of containers for question/solutions (5-7)*/
+.questionsmedium {
+	position: relative;
+	margin: auto;
+	margin-top: 10px;
+	background: rgba(0, 0, 225, 0.5);
+	width: 900px;
+	height: 1000px;
+	font-family: Verdana, Geneva, sans-serif;
+	border: 10px solid white;
+}
+/* for largest of containers for question/solutions (8-10)*/
+.questionslarge {
+	position: relative;
+	margin: auto;
+	margin-top: 10px;
+	background: rgba(0, 0, 225, 0.5);
+	width: 900px;
+	height: 1250px;
+	font-family: Verdana, Geneva, sans-serif;
+	border: 10px solid white;
+}
+
+#FinalBox {
+	margin: auto;
+	width: 700px;
+	color: white;
+	font-size: 18px;
+	text-shadow: 1px 1px 2px #000000, -1px -1px 2px #000000, -1px 1px 2px
+		#000000, 1px -1px 2px #000000;
+}
+
+/*holds all the text boxes*/
+#boxentrycontainer {
+	margin: auto;
+	width: 700px;
+	color: white;
+	font-size: 18px;
+	text-shadow: 1px 1px 2px #000000, -1px -1px 2px #000000, -1px 1px 2px
+		#000000, 1px -1px 2px #000000;
+}
+
+.textboxesred {
+	background: red;
+	margin: auto;
+	margin: 7px;
+	width: 400px;
+	height: 25px;
+	color: black;
+	font-size: 16px;
+}
+
+.textboxesgreen {
+	background: #00ff00;
+	margin: auto;
+	margin: 7px;
+	width: 400px;
+	height: 25px;
+	color: black;
+	font-size: 16px;
+}
+
+/*class for adjusting spaces in between entry textboxes*/
+.textboxes {
+	margin: auto;
+	margin: 7px;
+	width: 400px;
+	height: 25px;
+	color: black;
+	font-size: 16px;
+}
+/*   for file saving status display*/
+#menubuttoncontainer {
+	position: absolute;
+	bottom: 10px;
+	left: 70px;
+	margin: auto;
+}
+
+#openfilecontainer {
+	width: 400px;
+	margin: auto;
+}
+
+#openfilecontainer td {
+	width: 200px;
+	text-align: center;
+}
+
+#savegame {
+	margin-right: 10px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 14px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+#savegame:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+#savegame:active {
+	position: relative;
+	top: 1px;
+}
+
+#previewgame {
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 14px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+#previewgame:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+#previewgame:active {
+	position: relative;
+	top: 1px;
+}
+.buttons{
+	margin-left: 15px;
+	margin-right: 25px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+.buttons:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+.buttons:active {
+	position: relative;
+	top: 1px;
+}
+
+#backbuttons {
+	margin: 5px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+#backbuttons:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+#backbuttons:active {
+	position: relative;
+	top: 1px;
+}
+
+#nextbuttons {
+	margin-left: 25px;
+	margin-right: 15px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 20px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+#nextbuttons:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+#nextbuttons:active {
+	position: relative;
+	top: 1px;
+}
+
+#leftarrow {
+	position: absolute;
+	bottom: -5px;
+	height: 48px;
+	left: 0;
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+	transform: rotate(180deg);
+}
+
+#rightarrow {
+	position: absolute;
+	bottom: -5px;
+	right: 0;
+	height: 48px;
+}
+
+/*--end of information page stuff ---*/
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*--are you sure you want to exit stuff-- */
+#areyousure {
+	position: absolute;
+	margin: auto;
+	width: 400px;
+	text-align: center;
+	margin-left: 250px;
+	height: 250px;
+	border: 2px solid black;
+	background: white;
+	z-index: 50;
+	opacity: 0.9;
+}
+
+#notify {
+	position: absolute;
+	margin: auto;
+	width: 400px;
+	text-align: center;
+	margin-left: 250px;
+	height: 250px;
+	border: 2px solid black;
+	background: white;
+	z-index: 50;
+	opacity: 0.9;
+}
+
+.hidealertbox {
+	visibility: hidden;
+}
+
+.showalertbox {
+	visibility: visible;
+}
+
+.yesnobuttons {
+	margin: 25px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 20px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+.yesnobuttons:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+.yesnobuttons:active {
+	position: relative;
+	top: 1px;
+}
+
+#warningdialog {
+	margin: auto;
+	color: black;
+	font-size: 24px;
+	text-align: center;
+}
+
+#warningbuttons {
+	width: 300;
+}
+/*--end of warning page stuff ---*/
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*--gameboard------------------------------------------------------------------ */
+#gameboard {
+	table-layout: fixed;
+	background: blue;
+	margin-left: 115px;
+	margin-top: 5px;
+	border: 3px solid black;
+	width: 80%;
+	height: 100%;
+}
+
+#gameboard td {
+	vertical-align: center;
+	text-align: center;
+	border: 3px inset black;
+	width: 150px;
+	height: 100px;
+	font-size: 50px;
+	color: #d0d926;
+	font-weight: bold;
+	font-family: Helvetica;
+	margin: -1px;
+	padding: -1px;
+}
+
+#gameboard td a {
+	text-decoration: none;
+	font-size: 50px;
+	color: #d0d926;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+
+#gameboard th {
+	vertical-align: center;
+	text-align: center;
+	border: 7px inset black;
+	width: 150px;
+	height: 100px;
+	font-size: 22px;
+	color: white;
+	font-family: Helvetica;
+	text-shadow: 1px 1px 1px #000000, -1px -1px 1px #000000, -1px 1px 1px
+		#000000, 1px -1px 1px #000000;
+	margin: -1px;
+	padding: -1px;
+}
+
+#gameboard td:hover {
+   cursor:pointer;
+}
+
+#boardcontainer {
+	margin: auto;
+	width: 1200px;
+	height: 650px;
+}
+
+#score {
+	margin-top: 25px;
+	width: 100%;
+	height: 75px;
+}
+
+#score td {
+	margin-top: 25px;
+	border: 3px solid white;
+	color: yellow;
+	background: blue;
+	opacity: 0.9;
+	text-align: center;
+	vertical-align: center;
+	font-size: 35px;
+}
+
+#menubuttonsgameboard {
+    position:relative;
+	bottom: -26px;
+	border: 3px solid black;
+	z-index: +1;
+	padding: 15px;
+	height: 75px;
+	width: 950px;
+	margin: auto;
+	background: white;
+	opacity: 0.90;
+	color: black;
+	font-size: 24px;
+	font-family: Helvetica;
+	border-radius: 25px;
+}
+
+#returnmainbuttons {
+	margin-left: 5px;
+	margin-right: 25px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+#returnmainbuttons:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+#returnmainbuttons:active {
+	position: relative;
+	top: 1px;
+}
+
+#saveandexitbuttons {
+	margin-left: 15px;
+	margin-right: 25px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+#saveandexitbuttons:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+#saveandexitbuttons:active {
+	position: relative;
+	top: 1px;
+}
+
+#scorebuttonsclues {
+	border: 3px solid black;
+	z-index: +1;
+	margin: 10px;
+	height: 75px;
+	width: 79%;
+	margin: auto;
+	background: white;
+	opacity: 0.90;
+	color: black;
+	padding: 25px;
+	font-size: 24px;
+	font-family: Helvetica;
+	border-radius: 25px;
+	position: relative;
+	text-align: center;
+}
+
+#teambuttons {
+	margin-left: 23px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 40px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+#teambuttons:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+#teambuttons:active {
+	position: relative;
+	top: 1px;
+}
+#cluebox {
+	 position: fixed;
+	 vertical-align: middle;
+    width: 95%;
+    height: 95%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+	z-index: +500;
+}
+#clue {
+	margin:auto;
+     height: 850px;
+	width: 1200px;
+	vertical-align: middle;
+	text-align: center;
+	border: 7px inset black;
+	background: blue;
+	font-size: 65px;
+	color: white;
+	font-family: Helvetica;
+	text-shadow: 1px 1px 1px #000000, -1px -1px 1px #000000, -1px 1px 1px
+		#000000, 1px -1px 1px #000000;
+}
+
+#clue td{ vertical-align: middle;}
+
+#clue tr:nth-child(1){
+	height:45px;
+	vertical-align: middle;
+}
+#clue tr:nth-child(2) td:nth-child(1){
+	vertical-align: middle;
+	 height: 600px;
+	 text-align: center;
+	 margin:35px;
+	
+}
+
+#clue  tr:nth-child(3) {
+	vertical-align:bottom;
+	height: 35px;
+	width: 1100px;
+	text-align: center;
+	vertical-align: center;
+}
+
+#countdown{
+	z-index: +900;
+	text-align: center;
+	font-size: 45px;
+	color: white;
+	font-family: Helvetica;
+	text-shadow: 1px 1px 1px #000000, -1px -1px 1px #000000, -1px 1px 1px
+		#000000, 1px -1px 1px #000000;
+}
+
+#solution {
+	text-align: center;
+	background: blue;
+	margin: auto;
+	border: 7px inset black;
+	width: 100%;
+	height: 100%;
+	font-size: 75px;
+	color: white;
+	font-family: Helvetica;
+	text-shadow: 1px 1px 1px #000000, -1px -1px 1px #000000, -1px 1px 1px
+		#000000, 1px -1px 1px #000000;
+	margin: -1px;
+	padding: -1px;
+}
+
+#dailydouble {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 10px solid black;
+	margin-top: 25px;
+}
+
+#wagercontainer {
+	position: relative;
+	margin: auto;
+	margin-top: 50px;
+	background: rgba(0, 0, 225, 0.5);
+	width: 600px;
+	height: 500px;
+	font-family: Verdana, Geneva, sans-serif;
+	border: 10px solid white;
+	color: white;
+}
+
+#wagercontainer label {
+	margin-left: 150px;
+	font-size: 45px;
+}
+
+#wagers {
+	margin: auto;
+	width: 125px;
+	font-size: 35px;
+	height: 50px;
+	margin-top: 25px;
+	margin-left: 280px;
+}
+
+#continuebuttons {
+	position: relative;
+	-moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	box-shadow: inset 0px 1px 0px 0px #97c4fe;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6
+		), color-stop(1, #1e62d0));
+	background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6',
+		endColorstr='#1e62d0', GradientType=0);
+	background-color: #3d94f6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #337fed;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 40px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #1570cd;
+}
+
+#continuebuttons:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0
+		), color-stop(1, #3d94f6));
+	background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0',
+		endColorstr='#3d94f6', GradientType=0);
+	background-color: #1e62d0;
+}
+
+#continuebuttons:active {
+	position: relative;
+	top: 1px;
+}
+
+/*countdown effect stuff*/
+
+/* the plain countdown bars*/
+#countdown1 {
+	z-index: 1;
+	position: absolute;
+	border-spacing: 35px 0px;
+	border-collapse: separate;
+	bottom: 25px;
+}
+
+#countdown1 td {
+	background: black;
+	border: 2px solid white;
+	font-size: 2px;
+	width: 300px;
+	height: 25px;
+}
+
+#countdown1 td:nth-child(1), #countdown1 td:nth-child(5) {
+	background: red;
+}
+
+#countdown2 {
+	z-index: 1;
+	position: absolute;
+	border-spacing: 35px 0px;
+	border-collapse: separate;
+	bottom: 25px;
+}
+
+#countdown2 td {
+	background: black;
+	border: 2px solid white;
+	font-size: 2px;
+	width: 300px;
+	height: 25px;
+}
+
+#countdown2 td:nth-child(3) {
+	background: red;
+}
+
+#finalwagers {
+	color: black;
+	font-size: 24px;
+	background: white;
+	margin-top: 10px;
+}
+
+#finalwagers td, #finalwagers th {
+	border: 2px solid black;
+	width: 35px;
+	height: 35px;
+}
+
+#finaljeopardy {
+	table-layout: fixed;
+	background: blue;
+	margin-left: 115px;
+	margin-top: 25px;
+	border: 3px solid black;
+	width: 80%;
+	height: 100%;
+}
+
+#finaljeopardy td {
+	vertical-align: center;
+	text-align: center;
+	border: 3px inset black;
+	width: 150px;
+	height: 100px;
+	font-size: 25px;
+	color: #d0d926;
+	font-weight: bold;
+	font-family: Helvetica;
+	margin: -1px;
+	padding: -1px;
+}
+
+#finaljeopardy td a {
+	text-decoration: none;
+	font-size: 25px;
+	color: #d0d926;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+
+#finaljeopardy th {
+	vertical-align: center;
+	text-align: center;
+	border: 7px inset black;
+	width: 150px;
+	height: 100px;
+	font-size: 22px;
+	color: white;
+	font-family: Helvetica;
+	text-shadow: 1px 1px 1px #000000, -1px -1px 1px #000000, -1px 1px 1px
+		#000000, 1px -1px 1px #000000;
+	margin: -1px;
+	padding: -1px;
+}
+
+/*--end of gameboard stuff ----------------------------------------------------------------------------------------------*/
